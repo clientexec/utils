@@ -27,7 +27,7 @@ php lang_migrate.php swedish.txt core-se.po
 
 ### lang_migrate_js.php
 
-This is similar to the previous one, but for javascript lang files:
+This is similar to the previous one, but for javascript lang files. Copy the file `javascript.pot` and then rename the copy depending on your locale (in our example `javascript-se.po`), and run this:
 ```
 php lang_migrate_js.php swedish.js javascript-se.po
 ```
