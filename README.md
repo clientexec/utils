@@ -19,7 +19,7 @@ You need to have the `msggrep` utility installed in your system, which makes par
 - Copy the file `/language/core.pot` to your current directory, and rename it accordingly to the language two-letter code, with the extension `po`. In our example that would be `core-se.po` 
 - Run the tool like so:
 ```
-php lang_migrate swedish.txt core-se.po
+php lang_migrate.php swedish.txt core-se.po
 ```
 - You will see output listing the entries that you had in the old file and that are no longer in CE. That's fine.
 - Copy the updated `po` file into Clientexec's `language` directory.
@@ -29,7 +29,7 @@ php lang_migrate swedish.txt core-se.po
 
 This is similar to the previous one, but for javascript lang files:
 ```
-php lang_migrate swedish.js javascript-se.po
+php lang_migrate_js.php swedish.js javascript-se.po
 ```
 
 ### lang_regenerate_mo.php
