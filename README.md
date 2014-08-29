@@ -23,7 +23,14 @@ php lang_migrate swedish.txt core-se.po
 ```
 - You will see output listing the entries that you had in the old file and that are no longer in CE. That's fine.
 - Copy the updated `po` file into Clientexec's `language` directory.
-- Finally, you need to translate your `po` file into a `mo` file, using the `lang_regenerate_mo.php` utility, explained next.
+- Finally, you need to translate your `po` file into a `mo` file, using the `lang_regenerate_mo.php` utility, explained below.
+
+### lang_migrate_js.php
+
+This is similar to the previous one, but for javascript lang files:
+```
+php lang_migrate swedish.js javascript-se.po
+```
 
 ### lang_regenerate_mo.php
 
