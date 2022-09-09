@@ -51,7 +51,7 @@ while (($row = fgets($fp)) !== false) {
             $lines[$i] = trim($lines[$i]);
             if ($pastHeaders || (preg_match('/msgid ".+"/', $lines[$i])
                     // long messages will start with msgid ""
-                    || ($lines[$i] == 'msgid ""' && $lines[$i + 1]{0} == '"'))) {
+                    || ($lines[$i] == 'msgid ""' && $lines[$i + 1][0] == '"'))) {
                 $searchResult[] = $lines[$i];
                 $pastHeaders = true;
             }
